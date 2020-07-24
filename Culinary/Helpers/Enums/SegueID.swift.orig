@@ -1,0 +1,71 @@
+//
+//  SegueID.swift
+//  Culinary
+//
+//  Created by Sergey Nazarov on 03.12.2019.
+//  Copyright © 2019 Sergey Nazarov. All rights reserved.
+//
+
+import Foundation
+
+//id всех переходов
+
+enum SegueID {
+    //MARK:- Splash
+    case tabBar
+    case loginApp
+    
+    //MARK:- Регистрация/Вход
+    case restorePassword
+    
+    //MARK:- Feedback
+    case feedback
+    
+    //MARK:- Favorites
+    case favorites
+    
+    //MARK:- Balls
+    case balls
+    case myBalls
+<<<<<<< HEAD
+    
+    //MARK:- Coupons
+    case coupons
+    case aboutCoupon
+=======
+    case howGetBalls
+    case howSpendBalls
+>>>>>>> c04df14
+}
+
+extension SegueID{
+    var id: String{
+        switch self {
+        case .tabBar:
+            return "segueTabBarViewController"
+        case .restorePassword:
+            return "segueRestorePassword"
+        case .loginApp:
+            return "segueLoginApp"
+        case .feedback:
+            return "segueFeedbackViewController"
+        case .favorites:
+            return "segueFavoritesViewController"
+        case .balls:
+            return "segueBallsViewController"
+        case .myBalls:
+            return "segueMyBallsViewController"
+<<<<<<< HEAD
+        case .coupons:
+            return "segueCouponsViewController"
+        case .aboutCoupon:
+            return "segueAboutCouponsViewController"
+=======
+        case .howGetBalls:
+            return "segueHowGetBallsViewController"
+        case .howSpendBalls:
+            return "segueHowSpendBallsViewController"
+>>>>>>> c04df14
+        }
+    }
+}

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Rubik-Medium.ttf">
+            <string>Rubik-Medium</string>
+        </array>
+        <array key="Rubik-Regular.ttf">
+            <string>Rubik-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ImageDownloadView" customModule="Кулинариум" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KOP-6g-NHe" customClass="UIViewDesignable" customModule="Кулинариум" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 15" translatesAutoresizingMaskIntoConstraints="NO" id="YmA-EP-JTf" customClass="UIImageViewDesignable" customModule="Кулинариум" customModuleProvider="target">
+                            <rect key="frame" x="12" y="12" width="36" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="36" id="2M8-Xc-rbD"/>
+                                <constraint firstAttribute="height" constant="36" id="bOq-lS-q8h"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                    <real key="value" value="4"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Bpd-Rn-YdT">
+                            <rect key="frame" x="60" y="12.5" width="186" height="35.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Experience.jpg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S1i-rm-gsp">
+                                    <rect key="frame" x="0.0" y="0.0" width="93.5" height="16.5"/>
+                                    <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="14"/>
+                                    <color key="textColor" name="Black282A2F"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="101 KB • Июнь 14,2018 в 22:53" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ANW-Dh-k9M">
+                                    <rect key="frame" x="0.0" y="17.5" width="186" height="18"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="18" id="ZTX-Qg-khe"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="13"/>
+                                    <color key="textColor" name="Gray5D5956"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" name="Gray_E1DEDB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="CW5-AN-U0D"/>
+                        <constraint firstItem="YmA-EP-JTf" firstAttribute="leading" secondItem="KOP-6g-NHe" secondAttribute="leading" constant="12" id="NkP-SX-Rr8"/>
+                        <constraint firstItem="Bpd-Rn-YdT" firstAttribute="leading" secondItem="YmA-EP-JTf" secondAttribute="trailing" constant="12" id="PiW-BC-Kiy"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Bpd-Rn-YdT" secondAttribute="trailing" constant="12" id="Qf3-9T-ORz"/>
+                        <constraint firstItem="Bpd-Rn-YdT" firstAttribute="centerY" secondItem="YmA-EP-JTf" secondAttribute="centerY" id="V1D-lT-9B3"/>
+                        <constraint firstItem="YmA-EP-JTf" firstAttribute="centerY" secondItem="KOP-6g-NHe" secondAttribute="centerY" id="ge4-qu-xlv"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="KOP-6g-NHe" secondAttribute="trailing" id="Ldg-uD-pfI"/>
+                <constraint firstItem="KOP-6g-NHe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Typ-Rq-bMd"/>
+                <constraint firstItem="KOP-6g-NHe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="lpI-en-lBz"/>
+                <constraint firstAttribute="bottom" secondItem="KOP-6g-NHe" secondAttribute="bottom" id="zLz-VO-vFl"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="img" destination="YmA-EP-JTf" id="aGL-dX-huE"/>
+                <outlet property="nameImg" destination="S1i-rm-gsp" id="SNk-EG-VvZ"/>
+                <outlet property="sizeImage" destination="ANW-Dh-k9M" id="6pa-9o-r1F"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="268.86160714285711"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Rectangle 15" width="162" height="162"/>
+        <namedColor name="Black282A2F">
+            <color red="0.13400000333786011" green="0.14699999988079071" blue="0.17000000178813934" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Gray5D5956">
+            <color red="0.37000000476837158" green="0.34700000286102295" blue="0.33399999141693115" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Gray_E1DEDB">
+            <color red="0.88999998569488525" green="0.87400001287460327" blue="0.8619999885559082" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

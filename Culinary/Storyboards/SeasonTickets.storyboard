@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Rubik-Medium.ttf">
+            <string>Rubik-Medium</string>
+        </array>
+        <array key="Rubik-Regular.ttf">
+            <string>Rubik-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Абонементы-->
+        <scene sceneID="NT3-Uc-Mak">
+            <objects>
+                <viewController storyboardIdentifier="SeasonTicketsViewControllerID" title="Абонементы" modalPresentationStyle="overFullScreen" id="jex-f5-zkF" customClass="SeasonTicketsViewController" customModule="Кулинариум" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CWt-xz-eBi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="lGW-fR-w8q">
+                                <rect key="frame" x="67" y="60" width="280" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5b9-kI-eRn" customClass="UIButtonDesignable" customModule="Кулинариум" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="136" height="44"/>
+                                        <color key="backgroundColor" name="RedA4262A"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="g3i-MX-8Vk"/>
+                                            <constraint firstAttribute="width" constant="136" id="vAt-rc-CxJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="14"/>
+                                        <state key="normal" title="Мои">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                                <real key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                <color key="value" name="Red_550A0C"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                <real key="value" value="0.20000000000000001"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="point" keyPath="shadowOffset">
+                                                <point key="value" x="0.0" y="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowBlur">
+                                                <real key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="tumbLine:" destination="jex-f5-zkF" eventType="touchUpInside" id="pzU-za-CQL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ckA-UN-0Pv" customClass="UIButtonDesignable" customModule="Кулинариум" customModuleProvider="target">
+                                        <rect key="frame" x="144" y="0.0" width="136" height="44"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="7Ok-Bz-CjY"/>
+                                            <constraint firstAttribute="width" constant="136" id="WbJ-Cf-fvr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="14"/>
+                                        <state key="normal" title="Доступные">
+                                            <color key="titleColor" name="Black282A2F"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                                <real key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                <color key="value" name="Black282A2F"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                <real key="value" value="0.20000000000000001"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="point" keyPath="shadowOffset">
+                                                <point key="value" x="0.0" y="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowBlur">
+                                                <real key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="tumbLine:" destination="jex-f5-zkF" eventType="touchUpInside" id="ECy-Bs-a7t"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ZLC-X7-z8d">
+                                <rect key="frame" x="0.0" y="120" width="414" height="742"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="p27-Al-ylE" customClass="AnimatedCollectionViewLayout" customModule="AnimatedCollectionViewLayout">
+                                    <size key="itemSize" width="360" height="503"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="seasonTTime" id="jZH-R4-dgI" customClass="SeasonTTimeCollectionViewCell" customModule="Кулинариум" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="161" width="284" height="420"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="9Qg-lu-JAS">
+                                            <rect key="frame" x="0.0" y="0.0" width="284" height="420"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eGS-UL-ift" customClass="UIViewDesignable" customModule="Кулинариум" customModuleProvider="target">
+                                                    <rect key="frame" x="12" y="12" width="260" height="396"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_2298" translatesAutoresizingMaskIntoConstraints="NO" id="AJP-90-4kh" customClass="UIImageViewDesignable" customModule="Кулинариум" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="260" height="396"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                                                    <real key="value" value="12"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </imageView>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vwh-rT-U6v" customClass="UIViewDesignable" customModule="Кулинариум" customModuleProvider="target">
+                                                            <rect key="frame" x="16" y="240" width="228" height="140"/>
+                                                            <subviews>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ozy-kG-kZC">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="228" height="76"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JHh-iG-f27">
+                                                                            <rect key="frame" x="30.5" y="17" width="167" height="42"/>
+                                                                            <string key="text">Фреш каждое утро 
+целый месяц</string>
+                                                                            <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="18"/>
+                                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <constraints>
+                                                                        <constraint firstItem="JHh-iG-f27" firstAttribute="centerY" secondItem="ozy-kG-kZC" secondAttribute="centerY" id="S5m-As-bSO"/>
+                                                                        <constraint firstItem="JHh-iG-f27" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ozy-kG-kZC" secondAttribute="leading" constant="8" id="ezH-Nu-AYE"/>
+                                                                        <constraint firstItem="JHh-iG-f27" firstAttribute="centerX" secondItem="ozy-kG-kZC" secondAttribute="centerX" id="kbd-pL-xfW"/>
+                                                                    </constraints>
+                                                                </view>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gA0-vi-R9o" customClass="UIButtonDesignable" customModule="Кулинариум" customModuleProvider="target">
+                                                                    <rect key="frame" x="16" y="76" width="196" height="48"/>
+                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="jsh-ea-A7e"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="16"/>
+                                                                    <inset key="titleEdgeInsets" minX="6" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="6" maxY="0.0"/>
+                                                                    <state key="normal" title="ОСТАЛОСЬ 5 Ч" image="ic_timer_white">
+                                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </state>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderW">
+                                                                            <real key="value" value="2.2999999999999998"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                                                            <real key="value" value="8"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderC">
+                                                                            <color key="value" name="BorderClear30"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                    <connections>
+                                                                        <action selector="timeAction:" destination="jZH-R4-dgI" eventType="touchUpInside" id="SnN-Xr-eLQ"/>
+                                                                    </connections>
+                                                                </button>
+                                                            </subviews>
+                                                            <color key="backgroundColor" name="Green67C24E"/>
+                                                            <constraints>
+                                                                <constraint firstItem="gA0-vi-R9o" firstAttribute="leading" secondItem="Vwh-rT-U6v" secondAttribute="leading" constant="16" id="0VG-il-lCB"/>
+                                                                <constraint firstItem="gA0-vi-R9o" firstAttribute="top" secondItem="ozy-kG-kZC" secondAttribute="bottom" id="FMp-yH-erl"/>
+                                                                <constraint firstItem="gA0-vi-R9o" firstAttribute="height" secondItem="Vwh-rT-U6v" secondAttribute="height" multiplier="0.342857" priority="750" id="LAe-ny-Ufm"/>
+                                                                <constraint firstItem="ozy-kG-kZC" firstAttribute="top" secondItem="Vwh-rT-U6v" secondAttribute="top" id="MeZ-tN-qm0"/>
+                                                                <constraint firstAttribute="trailing" secondItem="ozy-kG-kZC" secondAttribute="trailing" id="mfT-OD-tXe"/>
+                                                                <constraint firstItem="ozy-kG-kZC" firstAttribute="leading" secondItem="Vwh-rT-U6v" secondAttribute="leading" id="nFS-3y-jie"/>
+                                                                <constraint firstAttribute="bottom" secondItem="gA0-vi-R9o" secondAttribute="bottom" constant="16" id="vYv-BU-2fB"/>
+                                                                <constraint firstItem="gA0-vi-R9o" firstAttribute="centerX" secondItem="Vwh-rT-U6v" secondAttribute="centerX" id="wED-FH-QVz"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                                                    <real key="value" value="8"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="AJP-90-4kh" secondAttribute="trailing" id="4C8-aZ-DWo"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Vwh-rT-U6v" secondAttribute="bottom" constant="16" id="Cgi-jm-1MK"/>
+                                                        <constraint firstItem="Vwh-rT-U6v" firstAttribute="leading" secondItem="eGS-UL-ift" secondAttribute="leading" constant="16" id="IO7-Jn-SFc"/>
+                                                        <constraint firstItem="Vwh-rT-U6v" firstAttribute="height" secondItem="eGS-UL-ift" secondAttribute="height" multiplier="0.353535" id="K0l-if-jYP"/>
+                                                        <constraint firstItem="AJP-90-4kh" firstAttribute="leading" secondItem="eGS-UL-ift" secondAttribute="leading" id="RSt-0m-Zcq"/>
+                                                        <constraint firstItem="AJP-90-4kh" firstAttribute="top" secondItem="eGS-UL-ift" secondAttribute="top" id="ZEI-iH-K72"/>
+                                                        <constraint firstItem="Vwh-rT-U6v" firstAttribute="centerX" secondItem="eGS-UL-ift" secondAttribute="centerX" id="cpx-J8-2Di"/>
+                                                        <constraint firstAttribute="bottom" secondItem="AJP-90-4kh" secondAttribute="bottom" id="eaf-3P-KW5"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                            <real key="value" value="0.20000000000000001"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="point" keyPath="shadowOffset">
+                                                            <point key="value" x="0.0" y="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowBlur">
+                                                            <real key="value" value="20"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                            <color key="value" name="Black282A2F"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                                            <real key="value" value="12"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="eGS-UL-ift" secondAttribute="bottom" constant="12" id="DXR-vX-NPA"/>
+                                                <constraint firstItem="eGS-UL-ift" firstAttribute="top" secondItem="9Qg-lu-JAS" secondAttribute="top" constant="12" id="cDX-fs-GZW"/>
+                                                <constraint firstAttribute="trailing" secondItem="eGS-UL-ift" secondAttribute="trailing" constant="12" id="eCY-W0-ejp"/>
+                                                <constraint firstItem="eGS-UL-ift" firstAttribute="leading" secondItem="9Qg-lu-JAS" secondAttribute="leading" constant="12" id="mZg-3W-xKd"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="customSize" width="284" height="420"/>
+                                        <connections>
+                                            <outlet property="bottomGBtn" destination="vYv-BU-2fB" id="PAa-in-PKf"/>
+                                            <outlet property="bottomGView" destination="Cgi-jm-1MK" id="leg-pH-PVO"/>
+                                            <outlet property="leadingGBtn" destination="0VG-il-lCB" id="gT3-qa-iQk"/>
+                                            <outlet property="leadingGView" destination="IO7-Jn-SFc" id="rzt-g2-385"/>
+                                            <outlet property="prictureSeasonT" destination="AJP-90-4kh" id="2nO-Zt-OZS"/>
+                                            <outlet property="time_btn" destination="gA0-vi-R9o" id="rN4-op-pwb"/>
+                                            <outlet property="titleSeasonT" destination="JHh-iG-f27" id="DWi-sG-oLO"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="seasonTActivate" id="c0c-hW-Kbf" customClass="SeasonTActivateCollectionViewCell" customModule="Кулинариум" customModuleProvider="target">
+                                        <rect key="frame" x="284" y="161" width="284" height="420"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="79C-F5-EGw">
+                                            <rect key="frame" x="0.0" y="0.0" width="284" height="420"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Np-Pi-Igi" customClass="UIViewDesignable" customModule="Кулинариум" customModuleProvider="target">
+                                                    <rect key="frame" x="12" y="12" width="260" height="396"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cupMeat" translatesAutoresizingMaskIntoConstraints="NO" id="fZV-Ld-I4C" customClass="UIImageViewDesignable" customModule="Кулинариум" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="260" height="396"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                                                    <real key="value" value="12"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </imageView>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WUQ-JX-2P4" customClass="UIViewDesignable" customModule="Кулинариум" customModuleProvider="target">
+                                                            <rect key="frame" x="16" y="240" width="228" height="140"/>
+                                                            <subviews>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Je-WQ-yIj">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="228" height="76"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXc-A8-Jb9">
+                                                                            <rect key="frame" x="40" y="17" width="148.5" height="42"/>
+                                                                            <string key="text">На завтрак
+в течении месяца</string>
+                                                                            <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="18"/>
+                                                                            <color key="textColor" name="Black282A2F"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <constraints>
+                                                                        <constraint firstItem="sXc-A8-Jb9" firstAttribute="centerY" secondItem="8Je-WQ-yIj" secondAttribute="centerY" id="97E-ud-aG6"/>
+                                                                        <constraint firstItem="sXc-A8-Jb9" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8Je-WQ-yIj" secondAttribute="leading" constant="8" id="BSD-ff-DlN"/>
+                                                                        <constraint firstItem="sXc-A8-Jb9" firstAttribute="centerX" secondItem="8Je-WQ-yIj" secondAttribute="centerX" id="Scf-P4-axm"/>
+                                                                    </constraints>
+                                                                </view>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6wr-CV-uxv" customClass="UIButtonDesignable" customModule="Кулинариум" customModuleProvider="target">
+                                                                    <rect key="frame" x="16" y="76" width="196" height="48"/>
+                                                                    <color key="backgroundColor" name="RedA4262A"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="mPs-dB-Vdr"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="16"/>
+                                                                    <state key="normal" title="Активировать">
+                                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </state>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                                                            <real key="value" value="8"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                    <connections>
+                                                                        <action selector="activate:" destination="c0c-hW-Kbf" eventType="touchUpInside" id="6XK-MS-i9Z"/>
+                                                                    </connections>
+                                                                </button>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstItem="6wr-CV-uxv" firstAttribute="top" secondItem="8Je-WQ-yIj" secondAttribute="bottom" id="6Xq-kc-vUj"/>
+                                                                <constraint firstItem="6wr-CV-uxv" firstAttribute="height" secondItem="WUQ-JX-2P4" secondAttribute="height" multiplier="0.342857" priority="750" id="J5M-9S-BQN"/>
+                                                                <constraint firstAttribute="trailing" secondItem="8Je-WQ-yIj" secondAttribute="trailing" id="LAJ-qh-P8r"/>
+                                                                <constraint firstItem="8Je-WQ-yIj" firstAttribute="leading" secondItem="WUQ-JX-2P4" secondAttribute="leading" id="Mbn-35-WbK"/>
+                                                                <constraint firstItem="6wr-CV-uxv" firstAttribute="centerX" secondItem="WUQ-JX-2P4" secondAttribute="centerX" id="NPP-0J-hE3"/>
+                                                                <constraint firstAttribute="bottom" secondItem="6wr-CV-uxv" secondAttribute="bottom" constant="16" id="S02-l4-ek8"/>
+                                                                <constraint firstItem="8Je-WQ-yIj" firstAttribute="top" secondItem="WUQ-JX-2P4" secondAttribute="top" id="SQW-ap-ire"/>
+                                                                <constraint firstItem="6wr-CV-uxv" firstAttribute="leading" secondItem="WUQ-JX-2P4" secondAttribute="leading" constant="16" id="buW-ao-nAO"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                                                    <real key="value" value="8"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="WUQ-JX-2P4" firstAttribute="centerX" secondItem="4Np-Pi-Igi" secondAttribute="centerX" id="20D-O2-Gq7"/>
+                                                        <constraint firstItem="WUQ-JX-2P4" firstAttribute="leading" secondItem="4Np-Pi-Igi" secondAttribute="leading" constant="16" id="2XY-mk-9VA"/>
+                                                        <constraint firstAttribute="bottom" secondItem="fZV-Ld-I4C" secondAttribute="bottom" id="HNS-W0-f3s"/>
+                                                        <constraint firstAttribute="bottom" secondItem="WUQ-JX-2P4" secondAttribute="bottom" constant="16" id="d1c-G7-aPs"/>
+                                                        <constraint firstItem="WUQ-JX-2P4" firstAttribute="height" secondItem="4Np-Pi-Igi" secondAttribute="height" multiplier="0.353535" id="d21-NG-6t1"/>
+                                                        <constraint firstAttribute="trailing" secondItem="fZV-Ld-I4C" secondAttribute="trailing" id="dkJ-eQ-SgB"/>
+                                                        <constraint firstItem="fZV-Ld-I4C" firstAttribute="leading" secondItem="4Np-Pi-Igi" secondAttribute="leading" id="grP-kU-ihd"/>
+                                                        <constraint firstItem="fZV-Ld-I4C" firstAttribute="top" secondItem="4Np-Pi-Igi" secondAttribute="top" id="sGg-6S-C73"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                            <real key="value" value="0.20000000000000001"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="point" keyPath="shadowOffset">
+                                                            <point key="value" x="0.0" y="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowBlur">
+                                                            <real key="value" value="20"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                            <color key="value" name="Black282A2F"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                                            <real key="value" value="12"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="4Np-Pi-Igi" secondAttribute="trailing" constant="12" id="3Z7-Jf-3O6"/>
+                                                <constraint firstItem="4Np-Pi-Igi" firstAttribute="top" secondItem="79C-F5-EGw" secondAttribute="top" constant="12" id="BC9-FL-S5U"/>
+                                                <constraint firstItem="4Np-Pi-Igi" firstAttribute="leading" secondItem="79C-F5-EGw" secondAttribute="leading" constant="12" id="FcM-RK-xU8"/>
+                                                <constraint firstAttribute="bottom" secondItem="4Np-Pi-Igi" secondAttribute="bottom" constant="12" id="eMt-pi-2U4"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="customSize" width="284" height="420"/>
+                                        <connections>
+                                            <outlet property="activate_btn" destination="6wr-CV-uxv" id="Hai-dv-kAW"/>
+                                            <outlet property="bottomABtn" destination="S02-l4-ek8" id="mel-xf-zAr"/>
+                                            <outlet property="bottomAView" destination="d1c-G7-aPs" id="kSg-AA-GEY"/>
+                                            <outlet property="leadingABtn" destination="buW-ao-nAO" id="WIR-lN-o5i"/>
+                                            <outlet property="leadingAView" destination="2XY-mk-9VA" id="vho-iQ-TIo"/>
+                                            <outlet property="prictureSeasonA" destination="fZV-Ld-I4C" id="6vN-vV-8ub"/>
+                                            <outlet property="titleSeasonA" destination="sXc-A8-Jb9" id="gfh-hf-7Yo"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="jex-f5-zkF" id="OHc-gK-X0R"/>
+                                    <outlet property="delegate" destination="jex-f5-zkF" id="ail-uu-e1G"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" name="Main"/>
+                        <constraints>
+                            <constraint firstItem="ZLC-X7-z8d" firstAttribute="top" secondItem="lGW-fR-w8q" secondAttribute="bottom" constant="16" id="3lY-nL-dcK"/>
+                            <constraint firstItem="846-f7-OSV" firstAttribute="trailing" secondItem="ZLC-X7-z8d" secondAttribute="trailing" id="8rK-J4-JaQ"/>
+                            <constraint firstItem="846-f7-OSV" firstAttribute="bottom" secondItem="ZLC-X7-z8d" secondAttribute="bottom" id="EfM-sL-7Rp"/>
+                            <constraint firstItem="lGW-fR-w8q" firstAttribute="top" secondItem="846-f7-OSV" secondAttribute="top" constant="16" id="SM6-Ed-CgJ"/>
+                            <constraint firstItem="ZLC-X7-z8d" firstAttribute="leading" secondItem="846-f7-OSV" secondAttribute="leading" id="gkV-G6-IBz"/>
+                            <constraint firstItem="lGW-fR-w8q" firstAttribute="centerX" secondItem="846-f7-OSV" secondAttribute="centerX" id="v4N-qw-e0Z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="846-f7-OSV"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Абонементы" id="w4t-uQ-KXX">
+                        <barButtonItem key="backBarButtonItem" title=" " id="SLy-kL-ZNp"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="ic_Collection" landscapeImage="ic_Collection" id="kCL-6e-0jb">
+                            <connections>
+                                <action selector="presentCollectionCellView:" destination="jex-f5-zkF" id="M21-ZE-Xpd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="collectionView" destination="ZLC-X7-z8d" id="Js4-4T-hUp"/>
+                        <outlet property="viewCollectection" destination="kCL-6e-0jb" id="4zP-UZ-57l"/>
+                        <outletCollection property="tumbLine_btns" destination="5b9-kI-eRn" collectionClass="NSMutableArray" id="21Y-XP-o0g"/>
+                        <outletCollection property="tumbLine_btns" destination="ckA-UN-0Pv" collectionClass="NSMutableArray" id="MAx-ir-xVj"/>
+                        <segue destination="Kwc-al-W2v" kind="show" identifier="segueAboutSeasonATicketViewController" id="MwN-Xq-OJk"/>
+                        <segue destination="KGv-YX-vr8" kind="show" identifier="segueAboutCouponsViewController" id="Edl-lv-RJh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OHt-lE-3Xu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1457" y="-18"/>
+        </scene>
+        <!--About SeasonA Ticket View Controller-->
+        <scene sceneID="T5q-VE-w9L">
+            <objects>
+                <viewController storyboardIdentifier="AboutSeasonATicketViewControllerID" modalPresentationStyle="overFullScreen" id="Kwc-al-W2v" customClass="AboutSeasonATicketViewController" customModule="Кулинариум" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xg9-xW-Mp4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tepmimage" translatesAutoresizingMaskIntoConstraints="NO" id="jkD-uc-Uy8">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="483.5"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F76-sc-0by" customClass="UIButtonDesignable" customModule="Кулинариум" customModuleProvider="target">
+                                <rect key="frame" x="362" y="46" width="40" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="6ln-K0-9LB"/>
+                                    <constraint firstAttribute="width" constant="40" id="QTV-F4-2EY"/>
+                                </constraints>
+                                <state key="normal" image="Share"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowBlur">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="point" keyPath="shadowOffset">
+                                        <point key="value" x="0.0" y="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="share:" destination="Kwc-al-W2v" eventType="touchUpInside" id="7qG-N1-1Gy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G5Y-4W-lQg" customClass="UIButtonDesignable" customModule="Кулинариум" customModuleProvider="target">
+                                <rect key="frame" x="12" y="46" width="40" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="0TL-Mw-o61"/>
+                                    <constraint firstAttribute="width" constant="40" id="OHD-Va-78R"/>
+                                </constraints>
+                                <state key="normal" image="ic_back_black"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowBlur">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="point" keyPath="shadowOffset">
+                                        <point key="value" x="0.0" y="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="back:" destination="Kwc-al-W2v" eventType="touchUpInside" id="xlR-Ho-d6o"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sca-uX-K4y">
+                                <rect key="frame" x="0.0" y="483.5" width="414" height="378.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ml1-JM-1Jo">
+                                        <rect key="frame" x="0.0" y="282.5" width="414" height="96"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6kX-mT-HgW" customClass="UIButtonDesignable" customModule="Кулинариум" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="10" width="374" height="56"/>
+                                                <color key="backgroundColor" name="RedA4262A"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="56" id="AxW-uE-TAK"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="16"/>
+                                                <state key="normal" title="Активировать">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="activate:" destination="Kwc-al-W2v" eventType="touchUpInside" id="6M4-wg-uWn"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="6kX-mT-HgW" secondAttribute="trailing" constant="20" id="JzY-cG-Hsz"/>
+                                            <constraint firstAttribute="height" constant="96" id="TEK-7P-hG7"/>
+                                            <constraint firstAttribute="bottom" secondItem="6kX-mT-HgW" secondAttribute="bottom" constant="30" id="gDc-td-erQ"/>
+                                            <constraint firstItem="6kX-mT-HgW" firstAttribute="leading" secondItem="Ml1-JM-1Jo" secondAttribute="leading" constant="20" id="kB9-QN-QFv"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rbu-d4-hRM">
+                                        <rect key="frame" x="0.0" y="46" width="414" height="252.5"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Nlw-fS-att">
+                                                <rect key="frame" x="20" y="20" width="374" height="232.5"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <string key="text">Ароматный, богатый полезными веществами свежевыжатый сок. Фрэш удивительно богат витаминами и минеральными веществами. Подавать его лучше вместе со сливками, поскольку молочный жир помогает бета-каротину лучше усваиваться.
+
+Ароматный, богатый полезными веществами свежевыжатый сок. Фрэш удивительно богат витаминами и минеральными веществами. Подавать его лучше вместе со сливками, поскольку молочный жир помогает бета-каротину лучше усваиваться.
+
+Ароматный, богатый полезными веществами свежевыжатый сок. Фрэш удивительно богат витаминами и минеральными веществами. Подавать его лучше вместе со сливками, поскольку молочный жир помогает бета-каротину лучше усваиваться.</string>
+                                                <color key="textColor" name="Gray5D5956"/>
+                                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="15"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Nlw-fS-att" secondAttribute="trailing" constant="20" id="3fQ-1R-WTE"/>
+                                            <constraint firstAttribute="bottom" secondItem="Nlw-fS-att" secondAttribute="bottom" id="EYr-HS-2X6"/>
+                                            <constraint firstItem="Nlw-fS-att" firstAttribute="top" secondItem="Rbu-d4-hRM" secondAttribute="top" constant="20" id="FWc-DG-LNL"/>
+                                            <constraint firstItem="Nlw-fS-att" firstAttribute="leading" secondItem="Rbu-d4-hRM" secondAttribute="leading" constant="20" id="fCO-gu-ckV"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" name="Main"/>
+                                <constraints>
+                                    <constraint firstItem="Rbu-d4-hRM" firstAttribute="leading" secondItem="sca-uX-K4y" secondAttribute="leading" id="3jd-Mm-6bq"/>
+                                    <constraint firstItem="Ml1-JM-1Jo" firstAttribute="top" secondItem="Rbu-d4-hRM" secondAttribute="bottom" constant="-16" id="Cc9-zl-is0"/>
+                                    <constraint firstItem="Ml1-JM-1Jo" firstAttribute="leading" secondItem="sca-uX-K4y" secondAttribute="leading" id="DqI-z5-d6g"/>
+                                    <constraint firstAttribute="trailing" secondItem="Rbu-d4-hRM" secondAttribute="trailing" id="PVd-8Q-2Sx"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ml1-JM-1Jo" secondAttribute="trailing" id="RKR-Ho-sKz"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ml1-JM-1Jo" secondAttribute="bottom" id="hcV-mf-1Nw"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AS6-Jx-VHd" customClass="UIViewDesignable" customModule="Кулинариум" customModuleProvider="target">
+                                <rect key="frame" x="47" y="437.5" width="320" height="92"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Кофе каждый день" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="R5K-Pl-0Kn">
+                                        <rect key="frame" x="8" y="33" width="304" height="26"/>
+                                        <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="22"/>
+                                        <color key="textColor" name="Black282A2F"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="R5K-Pl-0Kn" firstAttribute="centerX" secondItem="AS6-Jx-VHd" secondAttribute="centerX" id="0NR-Xy-lUv"/>
+                                    <constraint firstItem="R5K-Pl-0Kn" firstAttribute="leading" secondItem="AS6-Jx-VHd" secondAttribute="leading" constant="8" id="dJk-Hn-d6b"/>
+                                    <constraint firstAttribute="width" priority="750" constant="320" id="hBu-ap-17M"/>
+                                    <constraint firstAttribute="height" constant="92" id="hj4-pQ-4Cm"/>
+                                    <constraint firstItem="R5K-Pl-0Kn" firstAttribute="centerY" secondItem="AS6-Jx-VHd" secondAttribute="centerY" id="hmd-pe-ioZ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.20000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" name="Black282A2F"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="point" keyPath="shadowOffset">
+                                        <point key="value" x="0.0" y="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowBlur">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="Main"/>
+                        <constraints>
+                            <constraint firstItem="jkD-uc-Uy8" firstAttribute="leading" secondItem="gbi-MD-una" secondAttribute="leading" id="1Uy-Ug-2cF"/>
+                            <constraint firstItem="sca-uX-K4y" firstAttribute="bottom" secondItem="gbi-MD-una" secondAttribute="bottom" id="5p4-kf-GUD"/>
+                            <constraint firstItem="gbi-MD-una" firstAttribute="trailing" secondItem="F76-sc-0by" secondAttribute="trailing" constant="12" id="Aku-vz-dbu"/>
+                            <constraint firstItem="jkD-uc-Uy8" firstAttribute="trailing" secondItem="gbi-MD-una" secondAttribute="trailing" id="BOd-3n-vnr"/>
+                            <constraint firstItem="G5Y-4W-lQg" firstAttribute="top" secondItem="gbi-MD-una" secondAttribute="top" constant="2" id="F5D-BK-g2G"/>
+                            <constraint firstItem="gbi-MD-una" firstAttribute="trailing" secondItem="sca-uX-K4y" secondAttribute="trailing" id="Mal-7v-Fbd"/>
+                            <constraint firstItem="sca-uX-K4y" firstAttribute="top" secondItem="AS6-Jx-VHd" secondAttribute="top" constant="46" id="OCn-tV-nV9"/>
+                            <constraint firstItem="Rbu-d4-hRM" firstAttribute="top" secondItem="AS6-Jx-VHd" secondAttribute="bottom" id="PE4-yL-yc9"/>
+                            <constraint firstItem="jkD-uc-Uy8" firstAttribute="top" secondItem="Xg9-xW-Mp4" secondAttribute="top" id="RdN-R4-gEj"/>
+                            <constraint firstItem="sca-uX-K4y" firstAttribute="leading" secondItem="gbi-MD-una" secondAttribute="leading" id="Y8N-WN-f6V"/>
+                            <constraint firstItem="AS6-Jx-VHd" firstAttribute="centerX" secondItem="gbi-MD-una" secondAttribute="centerX" id="djy-yt-Wu3"/>
+                            <constraint firstItem="AS6-Jx-VHd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gbi-MD-una" secondAttribute="leading" constant="20" id="eTx-Ws-Lft"/>
+                            <constraint firstItem="sca-uX-K4y" firstAttribute="top" secondItem="jkD-uc-Uy8" secondAttribute="bottom" id="g5z-Pz-AVt"/>
+                            <constraint firstItem="jkD-uc-Uy8" firstAttribute="height" secondItem="Xg9-xW-Mp4" secondAttribute="height" multiplier="0.53973" id="gsp-Ma-86g"/>
+                            <constraint firstItem="G5Y-4W-lQg" firstAttribute="leading" secondItem="gbi-MD-una" secondAttribute="leading" constant="12" id="muC-gv-Bhx"/>
+                            <constraint firstItem="F76-sc-0by" firstAttribute="top" secondItem="gbi-MD-una" secondAttribute="top" constant="2" id="te7-lk-6UV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gbi-MD-una"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8qb-yB-fU8"/>
+                    <connections>
+                        <outlet property="activate_btn" destination="6kX-mT-HgW" id="ARY-1y-lnP"/>
+                        <outlet property="descriptionAboutSeasonATicket" destination="Nlw-fS-att" id="34F-vV-h6p"/>
+                        <outlet property="pictureAboutSeasonATicket" destination="jkD-uc-Uy8" id="dxD-hP-8B7"/>
+                        <outlet property="titleAboutSeasonATicket" destination="R5K-Pl-0Kn" id="sWN-Fe-YyV"/>
+                        <segue destination="e2f-jc-HdM" kind="presentation" identifier="segueShareViewController" animates="NO" modalPresentationStyle="overFullScreen" id="jNO-bP-YCV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zre-am-7pa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2343" y="-18"/>
+        </scene>
+        <!--AboutCouponsViewControllerID-->
+        <scene sceneID="d8Z-ms-ZIi">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Coupons" referencedIdentifier="AboutCouponsViewControllerID" id="KGv-YX-vr8" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="fNv-sK-VAN"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aSe-NO-YWX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2160" y="-454"/>
+        </scene>
+        <!--ShareViewControllerID-->
+        <scene sceneID="GwP-JB-yR5">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Stocks" referencedIdentifier="ShareViewControllerID" id="e2f-jc-HdM" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="e9E-S8-APv"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MeV-Ni-Aan" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2939" y="-344"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="IMG_2298" width="200" height="199"/>
+        <image name="Share" width="18" height="18"/>
+        <image name="cupMeat" width="224" height="352"/>
+        <image name="ic_Collection" width="18" height="22"/>
+        <image name="ic_back_black" width="8" height="14"/>
+        <image name="ic_timer_white" width="23" height="26"/>
+        <image name="tepmimage" width="360" height="360"/>
+        <namedColor name="Black282A2F">
+            <color red="0.13400000333786011" green="0.14699999988079071" blue="0.17000000178813934" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="BorderClear30">
+            <color red="1" green="1" blue="1" alpha="0.30000001192092896" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Gray5D5956">
+            <color red="0.37000000476837158" green="0.34700000286102295" blue="0.33399999141693115" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Green67C24E">
+            <color red="0.0" green="0.76599997282028198" blue="0.25600001215934753" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Main">
+            <color red="0.94499999284744263" green="0.92500001192092896" blue="0.91399997472763062" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="RedA4262A">
+            <color red="0.75099998712539673" green="0.1289999932050705" blue="0.14800000190734863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Red_550A0C">
+            <color red="0.38699999451637268" green="0.032000001519918442" blue="0.037999998778104782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

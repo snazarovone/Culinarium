@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Rubik-Medium.ttf">
+            <string>Rubik-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FilterCollapsibleTableViewHeader" customModule="Кулинариум" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WS8-kl-4Fe">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="вид заведения" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oOc-1a-Vaa">
+                            <rect key="frame" x="20" y="40" width="83" height="14"/>
+                            <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="12"/>
+                            <color key="textColor" name="282A2F_50"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sjK-Dh-6NR">
+                            <rect key="frame" x="20" y="16" width="366" height="1"/>
+                            <color key="backgroundColor" name="282A2F_20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="Jcx-Wm-k6r"/>
+                            </constraints>
+                        </view>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_arrow_down" translatesAutoresizingMaskIntoConstraints="NO" id="Qv2-X5-wnN">
+                            <rect key="frame" x="354" y="28" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="BpG-27-bi6"/>
+                                <constraint firstAttribute="width" constant="40" id="kWO-Og-wnz"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" name="Main"/>
+                    <constraints>
+                        <constraint firstItem="oOc-1a-Vaa" firstAttribute="leading" secondItem="WS8-kl-4Fe" secondAttribute="leading" constant="20" id="3Ts-CM-LJw"/>
+                        <constraint firstAttribute="trailing" secondItem="Qv2-X5-wnN" secondAttribute="trailing" constant="20" id="GZd-Vo-jXR"/>
+                        <constraint firstItem="sjK-Dh-6NR" firstAttribute="top" secondItem="WS8-kl-4Fe" secondAttribute="top" constant="16" id="LMj-uN-tFx"/>
+                        <constraint firstItem="oOc-1a-Vaa" firstAttribute="top" secondItem="WS8-kl-4Fe" secondAttribute="top" constant="40" id="fMt-F9-esy"/>
+                        <constraint firstAttribute="trailing" secondItem="sjK-Dh-6NR" secondAttribute="trailing" constant="28" id="m2z-8q-fYB"/>
+                        <constraint firstItem="sjK-Dh-6NR" firstAttribute="leading" secondItem="WS8-kl-4Fe" secondAttribute="leading" constant="20" id="qnh-hl-4xD"/>
+                        <constraint firstItem="Qv2-X5-wnN" firstAttribute="top" secondItem="oOc-1a-Vaa" secondAttribute="bottom" constant="-26" id="zn5-Cl-Rhc"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="WS8-kl-4Fe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="LWC-QS-zLA"/>
+                <constraint firstItem="WS8-kl-4Fe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="c8M-8U-bed"/>
+                <constraint firstAttribute="trailing" secondItem="WS8-kl-4Fe" secondAttribute="trailing" id="ctJ-xK-qhp"/>
+                <constraint firstAttribute="bottom" secondItem="WS8-kl-4Fe" secondAttribute="bottom" id="z2p-UQ-xZ7"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="arrow" destination="Qv2-X5-wnN" id="5Fl-p8-9T4"/>
+                <outlet property="name" destination="oOc-1a-Vaa" id="sss-09-haQ"/>
+                <outlet property="separatorView" destination="sjK-Dh-6NR" id="W1h-do-bUK"/>
+                <outlet property="topConstraint" destination="fMt-F9-esy" id="HVk-XZ-RTa"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="-146.31696428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_arrow_down" width="14" height="8"/>
+        <namedColor name="282A2F_20">
+            <color red="0.13400000333786011" green="0.14699999988079071" blue="0.17000000178813934" alpha="0.20000000298023224" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="282A2F_50">
+            <color red="0.15700000524520874" green="0.16500000655651093" blue="0.18400000035762787" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Main">
+            <color red="0.94499999284744263" green="0.92500001192092896" blue="0.91399997472763062" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

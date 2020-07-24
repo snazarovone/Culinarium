@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Rubik-Medium.ttf">
+            <string>Rubik-Medium</string>
+        </array>
+        <array key="Rubik-Regular.ttf">
+            <string>Rubik-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Restore Password View Controller-->
+        <scene sceneID="uxb-WX-3Gl">
+            <objects>
+                <viewController id="5hk-cH-eTe" customClass="RestorePasswordViewController" customModule="Кулинариум" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AQi-hO-UsK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="zjm-CU-gxU">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo_new" translatesAutoresizingMaskIntoConstraints="NO" id="Pok-Ix-CwM">
+                                <rect key="frame" x="60" y="32" width="255" height="135"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="286" id="s2j-SX-ez2"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="6xA-w3-NlQ">
+                                <rect key="frame" x="27.5" y="247" width="320" height="48"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Почта" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i2X-OS-ay7" customClass="UITextFieldDesignable" customModule="Кулинариум" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="48"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" name="TintLogin"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="dEN-oD-FD5"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" returnKeyType="send"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderW">
+                                                <real key="value" value="2.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderC">
+                                                <color key="value" name="BorderClear30"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                                <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingLeftCustom">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="5hk-cH-eTe" id="rtD-pb-PZe"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="354" id="QDG-NR-dzO"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="nk0-ag-7VG">
+                                <rect key="frame" x="91.5" y="571" width="192" height="48"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RG9-lx-ZDv" customClass="UIButtonDesignable" customModule="Кулинариум" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                                        <color key="backgroundColor" name="VK"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="48" id="JcW-Bk-Umf"/>
+                                            <constraint firstAttribute="height" constant="48" id="XjK-WG-fds"/>
+                                        </constraints>
+                                        <state key="normal" image="ic_vk"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BHC-A0-60w" customClass="UIButtonDesignable" customModule="Кулинариум" customModuleProvider="target">
+                                        <rect key="frame" x="72" y="0.0" width="48" height="48"/>
+                                        <color key="backgroundColor" name="FB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="FuV-iz-zOj"/>
+                                            <constraint firstAttribute="width" constant="48" id="MoL-Nu-a4H"/>
+                                        </constraints>
+                                        <state key="normal" image="ic_fb"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v6G-Rb-4cH" customClass="UIButtonDesignable" customModule="Кулинариум" customModuleProvider="target">
+                                        <rect key="frame" x="144" y="0.0" width="48" height="48"/>
+                                        <color key="backgroundColor" name="GPLUS"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="LXv-hs-0DI"/>
+                                            <constraint firstAttribute="width" constant="48" id="Tyy-PF-AbC"/>
+                                        </constraints>
+                                        <state key="normal" image="gplus"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Войти с помощью" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nBA-eS-8ks">
+                                <rect key="frame" x="132.5" y="535" width="110.5" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="EV7-MA-blB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DeB-Xi-J34" customClass="UIButtonDesignable" customModule="Кулинариум" customModuleProvider="target">
+                                <rect key="frame" x="27.5" y="327" width="320" height="56"/>
+                                <color key="backgroundColor" name="LoginBtn"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="bFW-2d-KQ9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="16"/>
+                                <state key="normal" title="Востановить пароль">
+                                    <color key="titleColor" name="TextLogin"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="restorePassword:" destination="5hk-cH-eTe" eventType="touchUpInside" id="klj-mZ-Efv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mlb-2e-RPU">
+                                <rect key="frame" x="113" y="399" width="149" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="zyn-dK-DBG"/>
+                                </constraints>
+                                <state key="normal" title="Уже не нужно, войти">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="back:" destination="5hk-cH-eTe" eventType="touchUpInside" id="fN9-q6-yN4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="DeB-Xi-J34" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Pok-Ix-CwM" secondAttribute="bottom" constant="96" id="0YC-TI-EPx"/>
+                            <constraint firstItem="Mlb-2e-RPU" firstAttribute="top" secondItem="DeB-Xi-J34" secondAttribute="bottom" constant="16" id="4ca-TR-uAO"/>
+                            <constraint firstItem="xA7-a6-zna" firstAttribute="bottom" secondItem="DeB-Xi-J34" secondAttribute="bottom" constant="284" id="4nj-QE-Aq4"/>
+                            <constraint firstItem="DeB-Xi-J34" firstAttribute="trailing" secondItem="6xA-w3-NlQ" secondAttribute="trailing" id="9vC-cm-Xb8"/>
+                            <constraint firstItem="Pok-Ix-CwM" firstAttribute="width" secondItem="AQi-hO-UsK" secondAttribute="width" multiplier="0.68" id="EW1-No-uVp"/>
+                            <constraint firstItem="nBA-eS-8ks" firstAttribute="centerX" secondItem="nk0-ag-7VG" secondAttribute="centerX" id="El4-fF-yq7"/>
+                            <constraint firstItem="xA7-a6-zna" firstAttribute="trailing" secondItem="zjm-CU-gxU" secondAttribute="trailing" id="Hd5-fH-H6g"/>
+                            <constraint firstItem="DeB-Xi-J34" firstAttribute="leading" secondItem="6xA-w3-NlQ" secondAttribute="leading" id="Ipv-3U-rfw"/>
+                            <constraint firstItem="DeB-Xi-J34" firstAttribute="top" secondItem="6xA-w3-NlQ" secondAttribute="bottom" constant="32" id="MoO-6o-7Vg"/>
+                            <constraint firstItem="6xA-w3-NlQ" firstAttribute="width" secondItem="AQi-hO-UsK" secondAttribute="width" multiplier="0.854" priority="750" id="Nv0-pd-5ea"/>
+                            <constraint firstItem="Pok-Ix-CwM" firstAttribute="top" secondItem="xA7-a6-zna" secondAttribute="top" priority="950" constant="32" id="Nxn-BW-bpJ"/>
+                            <constraint firstItem="6xA-w3-NlQ" firstAttribute="centerX" secondItem="xA7-a6-zna" secondAttribute="centerX" id="V7e-78-nC4"/>
+                            <constraint firstItem="Mlb-2e-RPU" firstAttribute="centerX" secondItem="DeB-Xi-J34" secondAttribute="centerX" id="Wzi-Yk-AFD"/>
+                            <constraint firstItem="DeB-Xi-J34" firstAttribute="top" relation="lessThanOrEqual" secondItem="Pok-Ix-CwM" secondAttribute="bottom" constant="160" id="X8F-0h-rrK"/>
+                            <constraint firstAttribute="bottom" secondItem="zjm-CU-gxU" secondAttribute="bottom" id="ZiO-fR-EX6"/>
+                            <constraint firstItem="nk0-ag-7VG" firstAttribute="centerX" secondItem="xA7-a6-zna" secondAttribute="centerX" id="b6a-C3-gj5"/>
+                            <constraint firstItem="Pok-Ix-CwM" firstAttribute="centerX" secondItem="xA7-a6-zna" secondAttribute="centerX" id="fL8-8N-IQK"/>
+                            <constraint firstItem="xA7-a6-zna" firstAttribute="bottom" secondItem="nk0-ag-7VG" secondAttribute="bottom" constant="48" id="h0A-l0-SLR"/>
+                            <constraint firstItem="nk0-ag-7VG" firstAttribute="top" secondItem="nBA-eS-8ks" secondAttribute="bottom" constant="12" id="qIM-pq-333"/>
+                            <constraint firstItem="zjm-CU-gxU" firstAttribute="top" secondItem="AQi-hO-UsK" secondAttribute="top" id="uce-4L-zbR"/>
+                            <constraint firstItem="zjm-CU-gxU" firstAttribute="leading" secondItem="xA7-a6-zna" secondAttribute="leading" id="wAl-dB-MOZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xA7-a6-zna"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="RxX-cG-O4Z"/>
+                    <connections>
+                        <outlet property="bottomButtonConst" destination="4nj-QE-Aq4" id="h5d-Fm-Tmi"/>
+                        <outlet property="emailTF" destination="i2X-OS-ay7" id="KE7-in-bp9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0J8-ZV-9SK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1817" y="72"/>
+        </scene>
+        <!--Login App View Controller-->
+        <scene sceneID="mcy-WV-DNB">
+            <objects>
+                <viewController modalPresentationStyle="overFullScreen" id="nQs-o0-Mu0" customClass="LoginAppViewController" customModule="Кулинариум" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pk8-Xg-iac">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="i1U-B4-Jqq">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo_new" translatesAutoresizingMaskIntoConstraints="NO" id="HJ5-fk-pR7">
+                                <rect key="frame" x="60" y="32" width="255" height="135"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="286" id="hUj-TU-HZz"/>
+                                </constraints>
+                            </imageView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vRI-NP-yyK" customClass="UILabelDesignable" customModule="Кулинариум" customModuleProvider="target">
+                                <rect key="frame" x="97" y="157" width="181.5" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="2Jr-5d-pG9"/>
+                                </constraints>
+                                <string key="text">Письмо для востановления
+пароля отправленно на почту</string>
+                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineHeight">
+                                        <real key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="1pZ-tZ-ype">
+                                <rect key="frame" x="27.5" y="247" width="320" height="108"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Почта" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vVP-Rx-PcR" customClass="UITextFieldDesignable" customModule="Кулинариум" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="48"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" name="TintLogin"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="TG0-oU-P0R"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" returnKeyType="next"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderW">
+                                                <real key="value" value="2.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderC">
+                                                <color key="value" name="BorderClear30"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                                <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingLeftCustom">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="nQs-o0-Mu0" id="Dj2-SR-VMY"/>
+                                        </connections>
+                                    </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Ma-qu-J0V">
+                                        <rect key="frame" x="0.0" y="60" width="320" height="48"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uhf-Th-c9T" customClass="UITextFieldDesignable" customModule="Кулинариум" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="48"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" name="TintLogin"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="15"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="send" secureTextEntry="YES"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderW">
+                                                        <real key="value" value="2.5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderC">
+                                                        <color key="value" name="BorderClear30"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                                        <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingLeftCustom">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingRightCustom">
+                                                        <real key="value" value="32"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="delegate" destination="nQs-o0-Mu0" id="s1u-dy-Ulq"/>
+                                                </connections>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zI7-TZ-OFR">
+                                                <rect key="frame" x="274" y="3" width="37" height="42"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="42" id="Zqj-CV-Pgh"/>
+                                                    <constraint firstAttribute="width" constant="37" id="aiE-k0-JgP"/>
+                                                </constraints>
+                                                <state key="normal" image="ic_view"/>
+                                                <connections>
+                                                    <action selector="hiddenPassword:" destination="nQs-o0-Mu0" eventType="touchUpInside" id="5Kx-bn-Lc2"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="3Rf-ua-TOT"/>
+                                            <constraint firstAttribute="trailing" secondItem="zI7-TZ-OFR" secondAttribute="trailing" constant="9" id="7cR-hq-0Fq"/>
+                                            <constraint firstAttribute="trailing" secondItem="Uhf-Th-c9T" secondAttribute="trailing" id="DAQ-gB-m64"/>
+                                            <constraint firstItem="zI7-TZ-OFR" firstAttribute="centerY" secondItem="Uhf-Th-c9T" secondAttribute="centerY" id="NFn-Go-5f1"/>
+                                            <constraint firstAttribute="bottom" secondItem="Uhf-Th-c9T" secondAttribute="bottom" id="Vjs-Ov-UCd"/>
+                                            <constraint firstItem="Uhf-Th-c9T" firstAttribute="leading" secondItem="8Ma-qu-J0V" secondAttribute="leading" id="c02-tb-uYO"/>
+                                            <constraint firstItem="Uhf-Th-c9T" firstAttribute="top" secondItem="8Ma-qu-J0V" secondAttribute="top" id="g4y-lm-8Ie"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="354" id="p3k-Ea-l7k"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gui-PE-zWK">
+                                <rect key="frame" x="245.5" y="371" width="102" height="28"/>
+                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="13"/>
+                                <state key="normal" title="Забыли пароль?">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="restorePassword:" destination="nQs-o0-Mu0" eventType="touchUpInside" id="EN1-gT-Oz1"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="ndA-Cp-pne">
+                                <rect key="frame" x="91.5" y="571" width="192" height="48"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grj-Z6-CSU" customClass="UIButtonDesignable" customModule="Кулинариум" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                                        <color key="backgroundColor" name="VK"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="itt-5A-xRV"/>
+                                            <constraint firstAttribute="width" constant="48" id="q0Z-4J-6DK"/>
+                                        </constraints>
+                                        <state key="normal" image="ic_vk"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="vk:" destination="nQs-o0-Mu0" eventType="touchUpInside" id="OgS-6d-jKJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vPh-aj-m9e" customClass="UIButtonDesignable" customModule="Кулинариум" customModuleProvider="target">
+                                        <rect key="frame" x="72" y="0.0" width="48" height="48"/>
+                                        <color key="backgroundColor" name="FB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="48" id="QHO-8r-jFc"/>
+                                            <constraint firstAttribute="height" constant="48" id="q6N-qt-Z09"/>
+                                        </constraints>
+                                        <state key="normal" image="ic_fb"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="fb:" destination="nQs-o0-Mu0" eventType="touchUpInside" id="oQz-Rs-vLm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oNE-Ax-anb" customClass="UIButtonDesignable" customModule="Кулинариум" customModuleProvider="target">
+                                        <rect key="frame" x="144" y="0.0" width="48" height="48"/>
+                                        <color key="backgroundColor" name="GPLUS"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="48" id="ABh-Vy-9NY"/>
+                                            <constraint firstAttribute="height" constant="48" id="klr-Eh-z4s"/>
+                                        </constraints>
+                                        <state key="normal" image="gplus"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="gplus:" destination="nQs-o0-Mu0" eventType="touchUpInside" id="WcG-Ff-3CF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Войти с помощью" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cOT-OR-nCh">
+                                <rect key="frame" x="132.5" y="535" width="110.5" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="eta-Qu-cnx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZhO-rG-fc1" customClass="UIButtonDesignable" customModule="Кулинариум" customModuleProvider="target">
+                                <rect key="frame" x="27.5" y="431" width="320" height="56"/>
+                                <color key="backgroundColor" name="LoginBtn"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="aGv-cx-SgV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="16"/>
+                                <state key="normal" title="Войти или зарегистрироваться">
+                                    <color key="titleColor" name="TextLogin"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="login:" destination="nQs-o0-Mu0" eventType="touchUpInside" id="Kg1-Sh-jXG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ZhO-rG-fc1" firstAttribute="top" relation="greaterThanOrEqual" secondItem="HJ5-fk-pR7" secondAttribute="bottom" constant="200" id="1dM-5y-IeB"/>
+                            <constraint firstItem="HJ5-fk-pR7" firstAttribute="width" secondItem="Pk8-Xg-iac" secondAttribute="width" multiplier="0.68" id="CaR-Np-Fcd"/>
+                            <constraint firstItem="5pg-2m-M6j" firstAttribute="bottom" secondItem="ndA-Cp-pne" secondAttribute="bottom" constant="48" id="DHl-19-jE4"/>
+                            <constraint firstItem="HJ5-fk-pR7" firstAttribute="top" secondItem="5pg-2m-M6j" secondAttribute="top" priority="950" constant="32" id="FSo-5a-aXN"/>
+                            <constraint firstItem="HJ5-fk-pR7" firstAttribute="centerX" secondItem="5pg-2m-M6j" secondAttribute="centerX" id="GVE-zq-Uox"/>
+                            <constraint firstItem="cOT-OR-nCh" firstAttribute="centerX" secondItem="ndA-Cp-pne" secondAttribute="centerX" id="HLU-EJ-PYU"/>
+                            <constraint firstItem="ZhO-rG-fc1" firstAttribute="top" secondItem="Gui-PE-zWK" secondAttribute="bottom" constant="32" id="I6C-ZT-3LS"/>
+                            <constraint firstItem="1pZ-tZ-ype" firstAttribute="width" secondItem="Pk8-Xg-iac" secondAttribute="width" multiplier="0.854" priority="750" id="IyM-bJ-0fe"/>
+                            <constraint firstItem="ZhO-rG-fc1" firstAttribute="trailing" secondItem="1pZ-tZ-ype" secondAttribute="trailing" id="JJ8-Sq-NSI"/>
+                            <constraint firstItem="Gui-PE-zWK" firstAttribute="top" secondItem="1pZ-tZ-ype" secondAttribute="bottom" constant="16" id="RXs-sP-Qi5"/>
+                            <constraint firstItem="vRI-NP-yyK" firstAttribute="centerX" secondItem="vVP-Rx-PcR" secondAttribute="centerX" id="TaU-YI-L3r"/>
+                            <constraint firstItem="ndA-Cp-pne" firstAttribute="top" secondItem="cOT-OR-nCh" secondAttribute="bottom" constant="12" id="VeF-gQ-ODh"/>
+                            <constraint firstAttribute="bottom" secondItem="i1U-B4-Jqq" secondAttribute="bottom" id="c6s-f1-1yO"/>
+                            <constraint firstItem="ndA-Cp-pne" firstAttribute="centerX" secondItem="5pg-2m-M6j" secondAttribute="centerX" id="c9w-8f-V53"/>
+                            <constraint firstItem="ZhO-rG-fc1" firstAttribute="leading" secondItem="1pZ-tZ-ype" secondAttribute="leading" id="dxx-qe-DUb"/>
+                            <constraint firstItem="1pZ-tZ-ype" firstAttribute="top" secondItem="vRI-NP-yyK" secondAttribute="bottom" constant="24" id="fKL-TD-ap7"/>
+                            <constraint firstItem="1pZ-tZ-ype" firstAttribute="centerX" secondItem="5pg-2m-M6j" secondAttribute="centerX" id="gtO-jB-7up"/>
+                            <constraint firstItem="5pg-2m-M6j" firstAttribute="bottom" secondItem="ZhO-rG-fc1" secondAttribute="bottom" constant="180" id="oTk-iM-YFa"/>
+                            <constraint firstItem="ZhO-rG-fc1" firstAttribute="top" relation="lessThanOrEqual" secondItem="HJ5-fk-pR7" secondAttribute="bottom" constant="264" id="spX-M0-nIs"/>
+                            <constraint firstItem="5pg-2m-M6j" firstAttribute="trailing" secondItem="i1U-B4-Jqq" secondAttribute="trailing" id="t2V-15-yeM"/>
+                            <constraint firstItem="i1U-B4-Jqq" firstAttribute="leading" secondItem="5pg-2m-M6j" secondAttribute="leading" id="ug2-Da-pFs"/>
+                            <constraint firstItem="Gui-PE-zWK" firstAttribute="trailing" secondItem="1pZ-tZ-ype" secondAttribute="trailing" id="vlH-r9-S52"/>
+                            <constraint firstItem="i1U-B4-Jqq" firstAttribute="top" secondItem="Pk8-Xg-iac" secondAttribute="top" id="xf8-Dd-999"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5pg-2m-M6j"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eUG-bK-uB7"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="bottomButtonConst" destination="oTk-iM-YFa" id="M02-fZ-gzI"/>
+                        <outlet property="emailTF" destination="vVP-Rx-PcR" id="ggf-ez-ujR"/>
+                        <outlet property="logintBtn" destination="ZhO-rG-fc1" id="0XG-et-qbr"/>
+                        <outlet property="passwordTF" destination="Uhf-Th-c9T" id="kA9-Fq-His"/>
+                        <outlet property="warningLB" destination="vRI-NP-yyK" id="ILJ-HW-MGx"/>
+                        <segue destination="5hk-cH-eTe" kind="show" identifier="segueRestorePassword" id="ItJ-Mh-Gvx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wlf-tj-9Md" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="955.07246376811599" y="70.982142857142847"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hhf-M4-oZE">
+            <objects>
+                <navigationController storyboardIdentifier="LoginAppNavigationVC" automaticallyAdjustsScrollViewInsets="NO" id="zha-LX-m9e" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KlZ-y7-ztl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="nQs-o0-Mu0" kind="relationship" relationship="rootViewController" id="eUc-fN-03t"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NgK-Rz-Ft8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="16.800000000000001" y="71.514242878560722"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="360" height="640"/>
+        <image name="Logo_new" width="126" height="126"/>
+        <image name="gplus" width="24" height="22"/>
+        <image name="ic_fb" width="8" height="18"/>
+        <image name="ic_view" width="18" height="14.5"/>
+        <image name="ic_vk" width="20" height="12"/>
+        <namedColor name="BorderClear30">
+            <color red="1" green="1" blue="1" alpha="0.30000001192092896" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="FB">
+            <color red="0.13600000739097595" green="0.34700000286102295" blue="0.61000001430511475" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="GPLUS">
+            <color red="0.92699998617172241" green="0.20399999618530273" blue="0.17599999904632568" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LoginBtn">
+            <color red="0.88999998569488525" green="0.87400001287460327" blue="0.8619999885559082" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextLogin">
+            <color red="0.13400000333786011" green="0.14699999988079071" blue="0.17000000178813934" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TintLogin">
+            <color red="1" green="0.26800000667572021" blue="0.29399999976158142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VK">
+            <color red="0.18000000715255737" green="0.46599999070167542" blue="0.64300000667572021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
